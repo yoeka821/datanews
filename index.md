@@ -3,6 +3,64 @@
 You can use the [editor on GitHub](https://github.com/yoeka821/github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+{
+    title: {
+        text: "2014-2018国内综合餐饮店营业额",
+        subtext: "",
+        textStyle: {
+            fontSize: 13
+        }
+    },
+    tooltip: {
+        trigger: "axis"
+    },
+    legend: {
+        data: ["单位（万）"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: true
+            },
+            dataView: {
+                show: true,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: true
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: "category",
+            boundaryGap: false,
+            data: ["16Q3", "16Q4", "17Q1", "17Q2", "17Q3", "17Q4", "18Q1", "18Q2", "18Q3"]
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            name: "°C"
+        }
+    ],
+    series: [
+        {
+            type: "line",
+            name: "单位（万）",
+            data: [19, 19, 19, 21, 23, 25, 27, 34, 41]
+        }
+    ]
+}
 
 ### Markdown
 
